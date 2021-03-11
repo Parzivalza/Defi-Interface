@@ -1,0 +1,98 @@
+html {
+    background-image: linear-gradient(160deg, rgba(0, 102, 255, 0.808), rgba(231, 17, 17, 0.747) 70.71%);
+  }
+  
+  body {
+    height: 100vh;
+  }
+
+  h1 {
+    font-family:'Montserrat', sans-serif;
+  }
+  
+  h2 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+  }
+  
+  .header {
+    font-style: oblique;
+    font-family:'Montserrat', sans-serif;
+  }
+  
+  .header button, #POOL {
+    float: right;
+    padding: 5px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+  }
+
+  .header button{
+    border-color: rgba(238, 16, 16, 0.856);
+  }
+  
+  .header button:hover {
+    color: white;
+    background-color: rgba(238, 16, 16, 0.856);
+  }
+
+  .section {
+    width: 80%;
+  }
+  .section button {
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
+    border-color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid;
+    width: 275px;
+    float: right;
+  }
+  .section button:hover, .but1:hover {
+    background-color: rgba(238, 16, 16, 0.856);
+    color: black;
+    align-content: center;
+    
+  }
+
+  .section input {
+    overflow-x: auto;
+    width: 200px
+  }
+
+   #roseswap{
+    width: 10vw; 
+    top: 5vh; 
+    left: 10vw
+  }
+
+  #slavswap{
+    width: 5vw; 
+    top: 5vh; 
+    left: 10vw
+  }
+  .fblogo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    height: 200px; 
+}
+
+#images{
+    text-align:center;
+}
+.but1{
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
+    border-color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid;
+    width: 275px;        
+}

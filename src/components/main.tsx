@@ -1,0 +1,17 @@
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { SlavSwap } from '../pages/SlavSwap';
+import { Home } from '../pages/Home';
+import { RoseSwap } from '../pages/RoseSwap';
+
+const Main = () => {
+  return (
+    <Switch> {/* The Switch decides which component to show based on the current URL.*/}
+      <Route exact path='/' component={Home}></Route>
+      <Route exact path='/RoseSwap' component={RoseSwap}></Route>
+      <Route exact path='/SlavSwap' component={SlavSwap}></Route>
+    </Switch>
+  );
+}
+
+export default Main;
