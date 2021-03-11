@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Defi-Interface/static/css/main.c7b659f9.chunk.css",
+    "main.js": "/Defi-Interface/static/js/main.e71b6ecd.chunk.js",
+    "main.js.map": "/Defi-Interface/static/js/main.e71b6ecd.chunk.js.map",
+    "runtime-main.js": "/Defi-Interface/static/js/runtime-main.f68cf16f.js",
+    "runtime-main.js.map": "/Defi-Interface/static/js/runtime-main.f68cf16f.js.map",
+    "static/js/2.c90124a9.chunk.js": "/Defi-Interface/static/js/2.c90124a9.chunk.js",
+    "static/js/2.c90124a9.chunk.js.map": "/Defi-Interface/static/js/2.c90124a9.chunk.js.map",
+    "static/js/3.1601f936.chunk.js": "/Defi-Interface/static/js/3.1601f936.chunk.js",
+    "static/js/3.1601f936.chunk.js.map": "/Defi-Interface/static/js/3.1601f936.chunk.js.map",
+    "index.html": "/Defi-Interface/index.html",
+    "static/css/main.c7b659f9.chunk.css.map": "/Defi-Interface/static/css/main.c7b659f9.chunk.css.map",
+    "static/js/2.c90124a9.chunk.js.LICENSE.txt": "/Defi-Interface/static/js/2.c90124a9.chunk.js.LICENSE.txt",
+    "static/media/roseswap.ef08b96e.png": "/Defi-Interface/static/media/roseswap.ef08b96e.png",
+    "static/media/slavswap.61cf5c3d.png": "/Defi-Interface/static/media/slavswap.61cf5c3d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f68cf16f.js",
+    "static/js/2.c90124a9.chunk.js",
+    "static/css/main.c7b659f9.chunk.css",
+    "static/js/main.e71b6ecd.chunk.js"
+  ]
+}
