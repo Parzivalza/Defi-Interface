@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { SlavSwap } from '../pages/SlavSwap';
 import { Home } from '../pages/Home';
 import { RoseSwap } from '../pages/RoseSwap';
+import { AmmoSwap } from '../pages/AmmoSwap';
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <Route exact path='/' component={Home}></Route>
       <Route exact path='/RoseSwap' component={RoseSwap}></Route>
       <Route exact path='/SlavSwap' component={SlavSwap}></Route>
+      <Route exact path='/AmmoSwap' component={AmmoSwap}></Route>
     </Switch>
   );
 }

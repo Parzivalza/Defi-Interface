@@ -35,6 +35,11 @@ export const RoseSwap = () => {
                             Slav Swap
                         </button>
                     </Link>
+                    <Link to="/AmmoSwap">
+                        <button>
+                            Ammo Swap
+                        </button>
+                    </Link>
                 </header>
             </div>
             <div className="section">

@@ -9,6 +9,5 @@ export const ViewAmountVodka = async () => {
     var Amount = await window.contractSlav.methods.pendingVodka(POOL.value, account).call({from: account}).catch((error: any) => {
         console.log(error)
     });
-    console.log(Amount)
     document.querySelector('#Dinfo2')!.innerHTML = (Amount/1E18).toString();
 };

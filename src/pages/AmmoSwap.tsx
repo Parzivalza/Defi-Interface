@@ -1,20 +1,20 @@
 import { OnLoad } from "../components/OnLoad";
-import { ViewAmountVodka } from "../components/ViewAmountVodka"
-import { WithdrawVODKAtoken } from "../components/WithdrawVODKAtoken"
-import { WithdrawEmergencyVodka } from "../components/WithdrawEmergencyVodka"
+import { ViewAmountAmmo } from "../components/ViewAmountAmmo"
+import { WithdrawAmmoToken} from "../components/WithdrawAmmoToken"
+import { WithdrawEmergencyAmmo } from "../components/WithdrawEmergencyAmmo"
 import { Link } from "react-router-dom";
-import slavswap from "../images/slavswap.png";
+import ammoswap from "../images/ammoswap.png";
 
 declare global {
     interface Window {
       ethereum: any;
       web3: any;
-      contractSlav: any;
+      contractAmmo: any;
       this: any;
     }
 }
 
-export const SlavSwap = () => {
+export const AmmoSwap = () => {
 
     if (window.performance.navigation.type == 1) {
         OnLoad();
@@ -32,15 +32,15 @@ export const SlavSwap = () => {
                         Rose Swap
                     </button>
                 </Link>
-                <Link to="/AmmoSwap">
-                        <button>
-                            Ammo Swap
-                        </button>
-                    </Link>
+                <Link to="/SlavSwap">
+                    <button>
+                        Slav Swap
+                    </button>
+                </Link>
             </header>
         </div>
         <div className="section">
-            <img src={slavswap} id="slavswap"/>
+            <img src={ammoswap} id="ammoswap"/>
             <p></p>
             <section>
                 <h2>Technical Stats</h2>
@@ -49,8 +49,8 @@ export const SlavSwap = () => {
                 <hr/>
                 <h2>Liquidity Pools</h2>
                 <br/>
-                <label htmlFor="POOL2">Choose your liquidity pool to withdraw from:</label>
-                <select name="POOL2" id="POOL2">
+                <label htmlFor="POOL3">Choose your liquidity pool to withdraw from:</label>
+                <select name="POOL3" id="POOL3">
                 <option value="0">1 </option> 
                 <option value="1">2 </option>
                 <option value="2">3 </option>
@@ -79,23 +79,23 @@ export const SlavSwap = () => {
                 <br/>
                 <br/>
                 <p>
-                    Step 1: Check your unharvested VODKA balance:
+                    Step 1: Check your unharvested AMMO balance:
                     <br/>
-                    <button onClick={() => ViewAmountVodka()} id="getAmount2">Get amount of unharvested VODKA tokens</button>
-                    <p id="Dinfo2"></p>
+                    <button onClick={() => ViewAmountAmmo()} id="getAmount3">Get amount of unharvested AMMO tokens</button>
+                    <p id="Dinfo3"></p>
                 </p>
                 <br/>
                 <p>
-                    Step 2: Enter amount of unharvested VODKA to withdraw form selected LP pool
+                    Step 2: Enter amount of unharvested AMMO to withdraw form selected LP pool
                     <br/>
-                    <input type="text" name="AmountLP2" id="AmountLP2" placeholder="Unharvested VODKA" />
-                    <button onClick={() => WithdrawVODKAtoken()} id="WithdrawLPtokens2">Withdraw unharvested VODKA tokens</button>
+                    <input type="text" name="AmountLP3" id="AmountLP3" placeholder="Unharvested AMMO" />
+                    <button onClick={() => WithdrawAmmoToken()} id="WithdrawLPtokens3">Withdraw unharvested AMMO tokens</button>
                 </p>
                 <br/>
                 <p>
-                    Step 3: Withdraw all your LP tokens from the selected LP pool! (All unharvested VODKA will be lost!)
+                    Step 3: Withdraw all your LP tokens from the selected LP pool! (All unharvested AMMO will be lost!)
                     <br/>
-                    <button onClick={() => WithdrawEmergencyVodka()} id="WithdrawStakedVodka">Withdraw LP tokens</button>
+                    <button onClick={() => WithdrawEmergencyAmmo()} id="WithdrawStakedAmmo">Withdraw LP tokens</button>
                 </p>
                 <br/>    
             </section>

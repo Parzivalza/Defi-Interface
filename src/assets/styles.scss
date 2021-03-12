@@ -23,7 +23,8 @@ html {
     font-family:'Montserrat', sans-serif;
   }
   
-  .header button, #POOL {
+  .header button, #POOL, #POOL2, #POOL3 {
+    margin: 10px;
     float: right;
     padding: 5px;
     width: 125px;
@@ -75,19 +76,26 @@ html {
     top: 5vh; 
     left: 10vw
   }
+
+  #ammoswap{
+    width: 5vw; 
+    top: 5vh; 
+    left: 10vw
+  }
+
   .fblogo {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15%;
-    height: 200px; 
+    height: 150px; 
 }
 
 #images{
     text-align:center;
 }
 .but1{
-    margin: 50px;
+    margin: 30px;
     color: rgb(0, 0, 0);
     transition-duration: 0.4s;
     border-color: rgb(0, 0, 0);
