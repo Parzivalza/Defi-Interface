@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Withdrawing LP tokens from SlavSwap, AmmoSwap and RoseSwap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Connect to the following site using your metamask on the bsc network: [Rescue your LP tokens](https://parzivalza.github.io/Defi-Interface/#/)
 
-## Available Scripts
+Liquidity tokens SlavSwap, AmmoSwap & RoseSwap
+------------------------------------
+1. Select the pool you want to withdraw from
+2. Check the amount of unharvested ROSE or VODKA tokens in your selected pool
+3. Withdraw the unharvested tokens (BEFORE REMOVING LP!)
+4. After withdrawing unharvested tokens remove your LP tokens from the selected pool
 
-In the project directory, you can run:
+Exchange liquidity tokens
+------------------------------------
+5. Go to [Pancakeswap](https://pancakeswap.finance/)
+6. At the liquidty tap add your liquidity pool by importing the ROSE token from address: 0x459af65245d0e40efa29c95d394c1e90c69c22b9
+, the VODKA token from address: 0x678fb48b1d3cad15817616cf4cb345887593d3ef or the AMMO token from address: 0x4ebc071457b7bc5edb82945aa5315289ea4f4040
+and one of the other tokens (BUSD, BNB, etc.) as shown 
+![afbeelding](https://user-images.githubusercontent.com/71760326/110769537-90065880-8258-11eb-8dc7-49e010759c02.png)
+7. After adding your LP pool to pancakeswap select the pool and remove the desired amount of LP tokens from the pool
+8. The LP tokens should be converted into its individual components as shown below
+![afbeelding](https://user-images.githubusercontent.com/71760326/110769868-f25f5900-8258-11eb-9016-2fbde78c85e8.png)
 
-### `yarn start`
+DISCLAIMER
+------------------------------------
+Parzivalza is not responsible for any financial loss you may experience by using this application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Donate
+------------------------------------
+Donation can be made to the following bsc address: 0x259fF8f10E98dc30AFEf489095f88e0b9A9028ac
