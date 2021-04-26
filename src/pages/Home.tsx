@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import slavswap from "../images/slavswap.png";
 import roseswap from "../images/roseswap.png";
 import ammoswap from "../images/ammoswap.png";
+import axe from "../images/axe.png";
 
 declare global {
     interface Window {
@@ -21,6 +22,7 @@ export const Home = () => {
                 <img src={roseswap} className="fblogo"/>
                 <img src={slavswap} className="fblogo"/>
                 <img src={ammoswap} className="fblogo"/>
+                <img src={axe} className="fblogo"/>
                 <br/>
                 <Link to="/RoseSwap">
                         <button className="but1">
@@ -35,6 +37,11 @@ export const Home = () => {
                 <Link to="/AmmoSwap">
                         <button className="but1">
                             AmmoSwap
+                        </button>
+                </Link>
+                <Link to="/Axe">
+                        <button className="but1">
+                            Axe defi
                         </button>
                 </Link>
             </div>

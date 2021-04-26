@@ -29,17 +29,11 @@ export const RoseSwap = () => {
         <div className="page-container about">
             <div className="header">  
                 <header>  
-                    
-                    <Link to="/SlavSwap">
-                        <button>
-                            Slav Swap
-                        </button>
-                    </Link>
-                    <Link to="/AmmoSwap">
-                        <button>
-                            Ammo Swap
-                        </button>
-                    </Link>
+                <Link to="/">
+                    <button>
+                        Landing Page
+                    </button>
+                </Link>
                 </header>
             </div>
             <div className="section">

@@ -1,20 +1,20 @@
 import { OnLoad } from "../components/OnLoad";
-import { ViewAmountVodka } from "../components/ViewAmountVodka"
-import { WithdrawVODKAtoken } from "../components/WithdrawVODKAtoken"
-import { WithdrawEmergencyVodka } from "../components/WithdrawEmergencyVodka"
+import { ViewAmountAxe } from "../components/ViewAmountAxe"
+import { WithdrawAxeToken} from "../components/WithdrawAxeToken"
+import { WithdrawEmergencyAxe } from "../components/WithdrawEmergencyAxe"
 import { Link } from "react-router-dom";
-import slavswap from "../images/slavswap.png";
+import axe from "../images/axe.png";
 
 declare global {
     interface Window {
       ethereum: any;
       web3: any;
-      contractSlav: any;
+      contractAxe: any;
       this: any;
     }
 }
 
-export const SlavSwap = () => {
+export const Axe = () => {
 
     if (window.performance.navigation.type == 1) {
         OnLoad();
@@ -26,7 +26,7 @@ export const SlavSwap = () => {
         <main>
         <div className="header">  
             <header>  
-            <Link to="/">
+                <Link to="/">
                     <button>
                         Landing Page
                     </button>
@@ -34,7 +34,7 @@ export const SlavSwap = () => {
             </header>
         </div>
         <div className="section">
-            <img src={slavswap} id="slavswap"/>
+            <img src={axe} id="axe"/>
             <p></p>
             <section>
                 <h2>Technical Stats</h2>
@@ -43,8 +43,8 @@ export const SlavSwap = () => {
                 <hr/>
                 <h2>Liquidity Pools</h2>
                 <br/>
-                <label htmlFor="POOL2">Choose your liquidity pool to withdraw from:</label>
-                <select name="POOL2" id="POOL2">
+                <label htmlFor="POOL4">Choose your liquidity pool to withdraw from:</label>
+                <select name="POOL4" id="POOL4">
                 <option value="0">1 </option> 
                 <option value="1">2 </option>
                 <option value="2">3 </option>
@@ -69,27 +69,31 @@ export const SlavSwap = () => {
                 <option value="21">22 </option>
                 <option value="22">23 </option>
                 <option value="23">24 </option>
+                <option value="24">25 </option>
+                <option value="25">26 </option>
+                <option value="26">27 </option>
+                <option value="27">28 </option>
                 </select> 
                 <br/>
                 <br/>
                 <p>
-                    Step 1: Check your unharvested VODKA balance:
+                    Step 1: Check your unharvested AXE balance:
                     <br/>
-                    <button onClick={() => ViewAmountVodka()} id="getAmount2">Get amount of unharvested VODKA tokens</button>
-                    <p id="Dinfo2"></p>
+                    <button onClick={() => ViewAmountAxe()} id="getAmount4">Get amount of unharvested AXE tokens</button>
+                    <p id="Dinfo4"></p>
                 </p>
                 <br/>
                 <p>
-                    Step 2: Enter amount of unharvested VODKA to withdraw form selected LP pool
+                    Step 2: Enter amount of unharvested AXE to withdraw form selected LP pool
                     <br/>
-                    <input type="text" name="AmountLP2" id="AmountLP2" placeholder="Unharvested VODKA" />
-                    <button onClick={() => WithdrawVODKAtoken()} id="WithdrawLPtokens2">Withdraw unharvested VODKA tokens</button>
+                    <input type="text" name="AmountLP4" id="AmountLP4" placeholder="Unharvested AXE" />
+                    <button onClick={() => WithdrawAxeToken()} id="WithdrawLPtokens4">Withdraw unharvested Axe tokens</button>
                 </p>
                 <br/>
                 <p>
-                    Step 3: Withdraw all your LP tokens from the selected LP pool! (All unharvested VODKA will be lost!)
+                    Step 3: Withdraw all your LP tokens from the selected LP pool! (All unharvested AXE will be lost!)
                     <br/>
-                    <button onClick={() => WithdrawEmergencyVodka()} id="WithdrawStakedVodka">Withdraw LP tokens</button>
+                    <button onClick={() => WithdrawEmergencyAxe()} id="WithdrawStakedAxe">Withdraw LP tokens</button>
                 </p>
                 <br/>    
             </section>

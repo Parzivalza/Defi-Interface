@@ -26,15 +26,9 @@ export const AmmoSwap = () => {
         <main>
         <div className="header">  
             <header>  
-                
-                <Link to="/RoseSwap">
+            <Link to="/">
                     <button>
-                        Rose Swap
-                    </button>
-                </Link>
-                <Link to="/SlavSwap">
-                    <button>
-                        Slav Swap
+                        Landing Page
                     </button>
                 </Link>
             </header>
